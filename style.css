@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    background-color: rgb(6, 16, 26);
+
+    flex-direction: column;                                /*position des éléments*/
+
+}
+
+section {
+
+    /*background-color: #3eade0;*/   
+    
+    background: linear-gradient(rgb(38, 97, 226), rgb(192, 251, 255));
+
+    padding: 0px;                                     /*écart de remplissage des 4 côtés de l'élément*/
+
+    border-radius: 6px;
+
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);            /*ombre à la boîte*/
+
+}
+
+.jeu {
+
+    width: 500px;                           /*500*/
+
+    height: 300px;                          /*200*/
+
+    border: 1px solid #000;
+
+    overflow: hidden;                     /*gère le dépassement du contenu hidden*/
+
+    border: 0;
+
+    border-bottom: 1px solid rgb(0, 0, 0);                 
+
+}
+
+.perso{                                  /*caractéristiques perso et position*/
+
+    width: 20px;
+
+    height: 50px;
+
+    position: relative;
+
+    top: 170px;          
+
+}
+
+.animation {
+
+    animation:  perso-saut 500ms infinite;         /*temps animation et manière*/
+
+}
+
+/*Animation personnage saute*/
+
+@keyframes   perso-saut {                      /*décompose les étapes de l'animation*/
+
+    0%{
+
+        top: 130px;
+
+    }
+
+    25% {
+
+        top: 80px;                  /*80*/
+
+    }
+
+    50% {
+
+        top: 80px;
+
+    }
+
+    100% {
+
+        top: 130px;
+
+    }
+
+}
+
+.perso img {
+
+    width: 300%;
+
+    height: 300%;
+
+    object-fit: contain;                              /*adapte l'objet au conteneur */
+
+}
+
+.birds img{                                  /*caractéristiques perso et position*/
+
+    width: 1000%;
+
+    height: 1000%;
+
+    object-fit: contain;
+    
+    /*pointer-events: none;*/
+
+}
+
+.birds{                                  /*caractéristiques perso et position*/
+
+    width: 20px;
+
+    height: 50px;
+
+    position: relative;
+
+    top: -170px;   
+
+    right : 0px;       
+
+    animation: anime-birds 8s infinite ;
+}
+
+@keyframes anime-birds {                          /*permet de définir les étapes d'animation plus finement */
+
+    0%{
+        right: 480px;
+    }
+
+    100% {
+
+        right: -600px;
+    }
+}
+
+.rectangle { 
+
+   width  : 500px;
+
+    height : 30px;
+    
+    background : green;
+
+    position: relative ;
+
+    top : 170px;
+
+    right : 0px;
+}
+
+
+.sun {
+
+    width  : 50px;
+
+    height : 50px;
+
+    background : rgb(241, 238, 35);
+
+    position: relative;
+
+    top : -90px;
+
+    right : -20px;
+
+    border-radius: 50px;
+
+    box-shadow: 0 0 50px rgba(237, 253, 89, 0.774);
+}
+
+.obstacles {
+
+    width: 20px;                                    /*largeur de l'objet*/
+
+    height: 20px;                                   /*hauteur de l'objet */
+
+    background-color: #14135a56;
+
+    position: relative;                              /*position de l'objet */
+
+    top:70px;                                       /*définit une partie de la position de l'bstacle130*/
+
+    left: 480px;                                     /*définit une partie de la position de l'obstacle*/
+
+    border-radius: 50%;                             /*arrondi les bors de l'objet*/
+
+    animation: anime-obstacles 2.5s infinite ;      /*temps d'animation et manière*/   
+}
+
+/*animation obstacles*/
+
+@keyframes anime-obstacles {                          /*permet de définir les étapes d'animation plus finement */
+
+    0%{
+        left: 480px;
+    }
+
+    100% {
+
+        left: -40px;
+    }
+}
+
+.control {
+
+    margin-top: 20px;                               /* marge au dessus de l'élément */
+
+    text-align: center;                             /* position du texte */
+}
+
+a,button {
+
+    padding: 10px 50px;                              /*écart de remplissage des 4 côtés de l'élément*/
+
+    border-radius: 4px;                             /* arrondi les bords du bouton */
+
+    border: 0;                                     /* bordure du bouton */
+
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);       /* ombre sur la boîte */
+
+    font-weight: bold;                           /*graisse utilisée pour le texte */
+
+    cursor: pointer;                             /* type de curseur */
+
+    background-color: #c2432c;               /* couleur des boutons en fond */
+
+    font-size: 20px;                           /* définit la taille de fonte, peut augmenter une autre taille */
+
+    text-decoration: 0;                      /* souligne le bouton Start avec 1, 0 = pas souligné */
+
+    color: #000000;                           /* cooueur du texte */
+
+}
