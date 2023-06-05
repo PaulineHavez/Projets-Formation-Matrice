@@ -1,0 +1,111 @@
+.titleLoader {
+  text-align: center;
+  display: flex; /* Utilisez un conteneur flex */
+  flex-direction: column; /* Définissez la direction en colonne */
+  align-items: center; /* Centre le contenu verticalement et horizontalement */
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(0, 255, 98);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgb(148, 51, 111);
+  margin-right: 10px;
+}
+
+button[type="button"] {
+  background-color: rgb(14, 58, 16);
+  padding: 10px;
+  border: 2px solid rgb(19, 41, 4);
+  border-radius: 5px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border-left: 15px;
+}
+
+form {
+  margin-top: 100px;
+}
+
+form,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.loader {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border: 16px solid rgb(255, 231, 97);
+  border-top: 16px solid rgb(252, 198, 98);
+  animation: disque 1s linear 0s infinite;
+  /* margin-top: 20px; Ajoutez une marge supérieure pour décaler le loader vers le bas */
+  visibility: hidden; /* Masquer le loader par défaut */
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+@keyframes disque {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* .affichage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .affichage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.affichage {
+  display: flex;
+  justify-content: center; /* Aligner les éléments au centre horizontalement */
+}
+
+/* .affichage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centrer horizontalement les éléments */
+/* align-items: center; /* Centrer verticalement les éléments */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  display: flex;
+  align-content: start;
+}
+
+.Days {
+  margin-right: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="titleLoader">
+      <h1>Weather App</h1>
+      <!-- <div id="wait" class="loader"></div> -->
+    </div>
+    <form>
+      <input type="text" id="ville" required />
+      <select class="Days" id="meteoDays">
+        <option value="">--Please choose an option--</option>
+        <option value="1">Today</option>
+        <option value="2">2 Days</option>
+        <option value="3">3 Days</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+      </select>
+      <button type="button">Submit</button>
+      <div id="wait" class="loader"></div>
+    </form>
+    <div class="affichage">
+      <!-- <div id="wait" class="loader"></div> -->
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
