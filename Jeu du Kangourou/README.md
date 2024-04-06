@@ -1,4 +1,4 @@
-# Le jeu du Kangourou
+## Le jeu du Kangourou
 
 ### Stacks : html, javascript
 
