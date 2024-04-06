@@ -1,6 +1,5 @@
-# Projets
-Projets personnels
+# Projets Formation Matrice L'École
 
-Le premier projet sur le quel j'ai commencé à travailler est Le jeu de la balle, qui est devenue, après les personnalisations que j'y ai apportées, Le jeu du kangourou. 
+Ce repository contient des projets que j'ai réalisé pendant ma première formation Boot Camp Développeur web full-stack javascript  au sein de Matrice L'École, sur la période de mars 2023 à juillet 2023.
 
-    Lien du tutoriel de Le jeu de la balle : https://www.youtube.com/watch?v=N1JjUAUABRM&list=PLuMW20nBgcbpUuBu8DUMvBN3rXtHDHGGz&index=5 
+
