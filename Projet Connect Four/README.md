@@ -1,4 +1,6 @@
-# Connect Four 
+## Connect Four 
+
+### Stack : javascript
 
 Connect Four est similaire au jeu Puissance 4, seulement, le plateau de jeu est plus important.
 
